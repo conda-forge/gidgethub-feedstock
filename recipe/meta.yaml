@@ -1,4 +1,4 @@
-{% set version = "3.3.0" %}
+{% set version = "4.0.0" %}
 
 package:
   name: gidgethub
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/gidgethub/gidgethub-{{ version }}.tar.gz
-  sha256: 3692d2df48a23c87ec4a5e74053ce343bc59cea7c34488a9136754a35aeb177a
+  sha256: 965a028f767f08743de241cf93cfaf0a99eac85c6d3219d277d51738c964ff91
 
 build:
   number: 0
@@ -23,16 +23,19 @@ requirements:
     - uritemplate >=3.0.0
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - gidgethub
-    - gidgethub.test
 
 about:
   home: https://gidgethub.readthedocs.io/en/latest/
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'An async GitHub API library for Python'
+  summary: An async GitHub API library for Python
 
   doc_url: https://gidgethub.readthedocs.io/en/latest/
   dev_url: https://github.com/brettcannon/gidgethub
