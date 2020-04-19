@@ -17,10 +17,12 @@ requirements:
   host:
     - python >=3.6
     - flit
-    - pytest-runner
   run:
+    - cryptography >=2.9
+    - pyjwt >=1.7.1
     - python >=3.6
-    - uritemplate >=3.0.0
+    - uritemplate >=3.0.1
+
 
 test:
   requires:
