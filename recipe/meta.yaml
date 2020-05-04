@@ -1,4 +1,4 @@
-{% set version = "4.0.0" %}
+{% set version = "4.1.0" %}
 
 package:
   name: gidgethub
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/gidgethub/gidgethub-{{ version }}.tar.gz
-  sha256: 965a028f767f08743de241cf93cfaf0a99eac85c6d3219d277d51738c964ff91
+  sha256: 95674e830110e9d9a0d01ee51a5d74fa28cffa4ba62376ab8b7f2303cfb5369b
 
 build:
   number: 0
@@ -17,10 +17,12 @@ requirements:
   host:
     - python >=3.6
     - flit
-    - pytest-runner
   run:
+    - cryptography >=2.9
+    - pyjwt >=1.7.1
     - python >=3.6
-    - uritemplate >=3.0.0
+    - uritemplate >=3.0.1
+
 
 test:
   requires:
