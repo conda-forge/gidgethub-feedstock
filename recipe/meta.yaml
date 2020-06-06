@@ -1,4 +1,4 @@
-{% set version = "4.1.0" %}
+{% set version = "4.1.1" %}
 
 package:
   name: gidgethub
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/gidgethub/gidgethub-{{ version }}.tar.gz
-  sha256: 95674e830110e9d9a0d01ee51a5d74fa28cffa4ba62376ab8b7f2303cfb5369b
+  sha256: cfabfa696d422ee91eaf1e3f01ea75e576721233cc3ea8badc7d86c30061df8e
 
 build:
   number: 0
   noarch: python
-  script: {{PYTHON}} -m flit install --deps=none
+  script: {{ PYTHON }} -m flit install --deps=none
 
 requirements:
   host:
