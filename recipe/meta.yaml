@@ -1,4 +1,4 @@
-{% set version = "5.2.0" %}
+{% set version = "5.2.1" %}
 
 package:
   name: gidgethub
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/gidgethub/gidgethub-{{ version }}.tar.gz
-  sha256: c359b769194e72f984d2e328de0ee8eb81b702342b0a44dc5cebac92104ecf4b
+  sha256: a533f85a57955261433c250701476304cc374037c0ab66b0e5372b4846749d5c
 
 build:
   number: 0
