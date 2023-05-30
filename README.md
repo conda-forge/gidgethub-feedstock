@@ -1,11 +1,11 @@
-About gidgethub
-===============
+About gidgethub-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gidgethub-feedstock/blob/main/LICENSE.txt)
 
 Home: https://gidgethub.readthedocs.io/en/latest/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gidgethub-feedstock/blob/main/LICENSE.txt)
 
 Summary: An async GitHub API library for Python
 
