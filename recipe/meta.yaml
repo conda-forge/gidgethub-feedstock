@@ -1,36 +1,36 @@
+{% set name = "gidgethub" %}
 {% set version = "5.3.0" %}
 
 package:
-  name: gidgethub
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/g/gidgethub/gidgethub-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gidgethub-{{ version }}.tar.gz
   sha256: 9ece7d37fbceb819b80560e7ed58f936e48a65d37ec5f56db79145156b426a25
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m flit install --deps=none
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - flit
+    - pip
   run:
-    - cryptography >=2.9
-    - pyjwt >=1.7.1
-    - python >=3.6
+    - python >=3.7
     - uritemplate >=3.0.1
-
+    - pyjwt >=2.4.0
 
 test:
-  requires:
-    - pip
-  commands:
-    - pip check
   imports:
     - gidgethub
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://gidgethub.readthedocs.io/en/latest/
