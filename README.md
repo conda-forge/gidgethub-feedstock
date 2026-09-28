@@ -190,5 +190,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@asmeurer](https://github.com/asmeurer/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 

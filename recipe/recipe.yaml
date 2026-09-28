@@ -8,7 +8,7 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/g/gidgethub/gidgethub-${{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/g/gidgethub/gidgethub-${{ version }}.tar.gz
   sha256: 4e6ef8acdb45571222ea6f7ec90ec8ca93df847391daac9502562780f1988369
 
 build:
