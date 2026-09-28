@@ -3,15 +3,13 @@ About gidgethub-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/gidgethub-feedstock/blob/main/LICENSE.txt)
 
-Home: https://gidgethub.readthedocs.io/en/latest/
+Home: https://pypi.org/project/gidgethub/
 
 Package license: Apache-2.0
 
-Summary: An async GitHub API library for Python
+Summary: An async GitHub API library
 
-Development: https://github.com/brettcannon/gidgethub
-
-Documentation: https://gidgethub.readthedocs.io/en/latest/
+Documentation: https://gidgethub.readthedocs.io/
 
 Current build status
 ====================
@@ -192,6 +190,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@asmeurer](https://github.com/asmeurer/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
