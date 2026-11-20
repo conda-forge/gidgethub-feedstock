@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "6.0.0"
+  version: "6.0.1"
 
 package:
   name: gidgethub
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/g/gidgethub/gidgethub-${{ version }}.tar.gz
-  sha256: 4e6ef8acdb45571222ea6f7ec90ec8ca93df847391daac9502562780f1988369
+  sha256: 5a4b45157e1ec073677420a793d4c1192d4a5e1373817779f4328abafd365d3d
 
 build:
   number: 0
